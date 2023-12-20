@@ -1,0 +1,6 @@
+name = input("Enter your name:")
+print(name)
+lowercase_name = name.lower()
+print(lowercase_name)
+a = lowercase_name.count('a')
+print(f"The occurrence of a is {a}")

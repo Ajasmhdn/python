@@ -1,0 +1,11 @@
+roll_no=[11,32,23,54,15]
+#print(roll_no[1])
+print(roll_no[-5])
+print(roll_no[1:4:2])
+roll_no.reverse()
+print(max(roll_no))
+roll_no.extend([20,10,12,34,22,2])
+roll_no[1:4]=[8,5,3]
+#roll_no.remove(5)
+roll_no.pop(2)
+print(roll_no)
