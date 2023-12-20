@@ -29,6 +29,6 @@ num_age = int(age)
 days_left = calculate_days(age)
 year_left = 90 - num_age
 months_left = year_left * 12
-weeks_left = year_left * 53
+weeks_left = year_left * 52
 
 print(f"The days left{days_left}. The weeks left {weeks_left}. the months left {months_left}")
