@@ -1,0 +1,9 @@
+set1={'Ram',"Gokul","suni",'Charan'}
+set2={"Charan",'shiva','ramanan'}
+#print(set1.union(set2))
+set1.intersection_update(['mohan','shiva','Gokul'])
+print(set1)
+print(set1.update(["sugunan","charan"]))
+print(set1.union(('Nehru',),set2))
+#print(set1|set2)
+#print(set1&set2)
