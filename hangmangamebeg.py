@@ -20,6 +20,7 @@ words = ["SachinTendulkar", "SunilGavaskar", "RahulDravid", "KapilDev",
          "KapilDev", "MohammedAzharuddin"]
 
 word=random.choice(words)
+word=word.lower()
 word_list=list(word)
 guess_list=[]
 for i in range(len(word)):
