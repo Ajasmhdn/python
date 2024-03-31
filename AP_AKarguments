@@ -1,0 +1,15 @@
+# def add(*numbers,name):
+#     c=0
+#     print(name)
+#     for i in numbers:
+#         c+=i
+#     print(c)
+# add(1,2,3,4,5,6,8,7,name="Bheem")
+# add(1,2,4,66,88,name="Jenny")
+
+def info_person(**details):
+    for key,value in details.items():
+        print(key,":",value)
+    print()
+info_person(name="Ajas",age=22,city="Kollam",mob=1234567890)
+info_person(name="Jenny",age=22)

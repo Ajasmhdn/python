@@ -6,5 +6,3 @@ while num1>0:
     sum+=digit
     num1=num1//10
 print(sum)
-
-

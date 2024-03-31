@@ -1,12 +1,24 @@
 import random
-list=["rock","Paper","Scissors"]
-computer_choice=random.choice(list)
-user_choice=int(input("Enter your choice: 0 for Rock, 1 for Paper, 2 for Scissors: "))
-if(computer_choice>user_choice or computer_choice==0 and user_choice==2):
-    print("Computer wins!")
-elif(computer_choice==user_choice):
-    print("Draw!")
-elif(computer_choice<user_choice or computer_choice==2 and user_choice==0):
-    print("User wins!")
-else:
+
+# List of choices
+list = ["rock", "Paper", "Scissors"]
+
+# Computer makes a random choice
+computer_choice = random.choice(list).lower()
+
+# User enters their choice
+user_choice = input("Enter your choice: Rock, Paper, or Scissors: ").lower()
+
+# Check if the user entered a valid choice
+if user_choice not in list:
     print("Invalid input!")
+else:
+    # Compare the choices
+    if (computer_choice == "rock" and user_choice == "scissors") or \
+       (computer_choice == "scissors" and user_choice == "paper") or \
+       (computer_choice == "paper" and user_choice == "rock"):
+        print("Computer wins!")
+    elif (computer_choice == user_choice):
+        print("Draw!")
+    else:
+        print("User wins!")
